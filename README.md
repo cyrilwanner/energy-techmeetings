@@ -7,7 +7,7 @@ They are sometimes not self explanatory without oral explanation, so if you have
 ## Topics
 
 - [React](2018-03-16-react.md) [2018-03-16]:
-  After completing an [online react course](https://www.udemy.com/react-the-complete-guide-incl-redux/) we discussed the topics together.
+  After completing an [online react course](https://www.udemy.com/react-the-complete-guide-incl-redux/), we have discussed the topics together and cleared some open questions.
   It contains summaries of the most important topics and also some questions/tasks to strengthen the learned things.
 
 - [Next.js](2018-04-13-nextjs.md) [2018-04-13]:
