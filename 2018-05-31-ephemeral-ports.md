@@ -19,6 +19,7 @@ All systems reserve a specific range for such dynamic ports which are called Eph
 We have defined the following rules in our firewall:
 
 **inbound**:
+
 | Order | Port | Status |
 | ----- | ---- | ------ |
 | 1 | **22** | ALLOWED |
@@ -27,6 +28,7 @@ We have defined the following rules in our firewall:
 | 4 | * | BLOCKED |
 
 **outbound**:
+
 | Order | Port | Status |
 | ----- | ---- | ------ |
 | 1 | * | ALLOWED |
