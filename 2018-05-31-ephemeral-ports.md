@@ -7,7 +7,12 @@ All systems reserve a specific range for such dynamic ports which are called Eph
 
 * they are shortlived ports
 * every connection gets another free port so they are not predictable (although they are always in the defined range)
-* this way, multiple connections to the same destination port can get opened at the same time (e.g. two concurrent website requests) which would not be possible if it would always get returned on the same port
+
+<details>
+  <summary>Why do we need those ports?</summary>
+
+  This way, multiple connections to the same destination port can get opened at the same time (e.g. two concurrent website requests) which would not be possible if it would always get returned on the same port
+</details>
 
 # Ephemeral Ports and Firewalls
 
@@ -32,6 +37,8 @@ We obviously want to allow incoming traffic only on ports *22*, *80* and *443* a
   <summary>Will this work or do you see any problems?</summary>
 
   It depends on whether the firewall is stateless or statefull.
+
+  We had a problem configuring firewalls in our AWS setup recently because we didn't thought about ephemeral ports when we configured the firewalls and so we were able to connect to the instance but any outgoing request on it simply timed out.
 </details>
 
 ## Stateless vs. stateful firewalls
@@ -50,7 +57,7 @@ While a stateful firewall..
 <details>
   <summary>Which firewall will now work as expected with the rules defined above? And how can we change the other one that it also works as expected?</summary>
 
-  The stateful firewall will work as expected as it knows that, even if the incoming port is 32768, it is a response to a connection we have opened and as all outgoing connections should be allowed, the firewall lets the packages pass.
+  The stateful firewall will work as expected as it knows, that even if the incoming port is 32768, it is a response to a connection we have opened and as all outgoing connections should be allowed, the firewall lets the packages pass.
 
   But the stateless firewall doesn't know that. We have to additionally allow all ports between 32768 and 61000 on the stateless firewall.
 </details>

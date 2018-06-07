@@ -17,3 +17,11 @@ They are sometimes not self explanatory without oral explanation, so if you have
 - [MutationObserver, IntersectionObserver and Page Visibility API](2018-05-18-js-apis.md) [2018-05-18]:
   In this topic, the MutationObserver, IntersectionObserver and Page Visibility API are covered with examples and availability information.
   At the end, a real use-case on [energy.ch](https://energy.ch) is described which uses all these APIs together.
+
+- [CSS Specificity / `!important`](2018-05-31-css-specificity.md) [2018-05-31]:
+  `!important` often gets used out of lazyness or when the site/css structure doesn't get understood.
+  So we cover how css calculates the specificity values and what possible ways are to avoid `!important` in our code.
+
+- [Ephemeral Ports](2018-05-31-ephemeral-ports.md) [2018-05-31]:
+  When configuring firewalls, we have to understand how the traffic flow works and what firewalls are capable of.
+  With a recent problem as an example, we take a look at what we have to keep in mind and which firewalls AWS provides.
