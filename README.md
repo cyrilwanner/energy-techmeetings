@@ -2,7 +2,7 @@
 
 Some of my presentations for internal Tech Meetings @ [Energy](https://energy.ch) are stored in this repository. Every presentations took between 30m and 1h30m, including some questions at the end.
 
-They are sometimes not self explanatory without oral explanation, so if you have any question, just hit me on slack or using another communication method (email, twitter, ..).
+They are sometimes not self explanatory without oral explanation, so if you have any question, just hit me on slack or any another communication method (email, twitter, ..).
 
 ## Topics
 
@@ -25,3 +25,6 @@ They are sometimes not self explanatory without oral explanation, so if you have
 - [Ephemeral Ports](2018-05-31-ephemeral-ports.md) [2018-05-31]:
   When configuring firewalls, we have to understand how the traffic flow works and what firewalls are capable of.
   With a recent problem as an example, we take a look at what we have to keep in mind and which firewalls AWS provides.
+
+- [Different React and TypeScript Topics](2018-08-09-react-typescript.md) [2018-08-09]:
+  Different opics which came up while working on a React project in the last few weeks/months.
